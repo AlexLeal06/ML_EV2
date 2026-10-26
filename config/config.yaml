@@ -1,0 +1,16 @@
+data:
+  raw_path: data/raw/Ames_Iowa_Housing_Dataset.csv
+  interim_path: data/interim/ames_validated.csv
+  processed_path: data/processed/ames_modeling.csv
+  target: SalePrice
+
+model:
+  random_state: 42
+  test_size: 0.20
+  random_forest:
+    n_estimators: 80
+    min_samples_leaf: 2
+    max_features: 0.8
+
+clustering:
+  k_values: [2, 3, 4, 5, 6]
